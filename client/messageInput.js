@@ -3,6 +3,9 @@ Template.messageInput.events({
     "click button[name=sendMessage]" (evt,tmpl) {
         tmpl.sendMessage();
     },
+    "click button[name=sendImage]" (evt, tmpl) {
+
+    }.
     "keyup input[name=messageText]" (evt,tmpl) {
         if(evt.keyCode == 13){
             tmpl.sendMessage();
