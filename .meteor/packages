@@ -22,3 +22,6 @@ accounts-password
 random
 session
 twbs:bootstrap
+jparker:gravatar
+momentjs:moment@=2.13.1
+rzymek:moment-locale-ko@=2.12.0
