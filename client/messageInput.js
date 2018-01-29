@@ -3,9 +3,6 @@ Template.messageInput.events({
     "click button[name=sendMessage]" (evt,tmpl) {
         tmpl.sendMessage();
     },
-    "click button[name=sendImage]" (evt, tmpl) {
-
-    }.
     "keyup input[name=messageText]" (evt,tmpl) {
         if(evt.keyCode == 13){
             tmpl.sendMessage();
@@ -34,8 +31,6 @@ Template.messageInput.onCreated(function(){
 
         /* Messages.insert(messageObj); 기존 코드 삭제 */
         Meteor.call("insertMessage",messageObj); /* 메소드 호출로 변경 */
-
-        console.log(messageObj);
 
         txtBox.value = "";
         txtBox.focus();

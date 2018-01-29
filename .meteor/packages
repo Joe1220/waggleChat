@@ -17,7 +17,6 @@ es5-shim@4.7.0                # ECMAScript 5 compatibility for older browsers
 ecmascript@0.10.0              # Enable ECMAScript2015+ syntax in app code
 shell-server@0.3.1            # Server-side component of the `meteor shell` command
 
-accounts-ui
 accounts-password
 random
 session
@@ -25,3 +24,15 @@ twbs:bootstrap
 jparker:gravatar
 momentjs:moment@=2.13.1
 rzymek:moment-locale-ko@=2.12.0
+useraccounts:bootstrap
+raix:handlebar-helpers
+useraccounts:unstyled
+accounts-ui-unstyled
+accounts-ui
+aldeed:template-extension
+kadira:flow-router
+alanning:roles
+accounts-facebook
+service-configuration
+google-config-ui
+accounts-google
