@@ -4,21 +4,20 @@
 </head>
 
 <body>
+
+    {{> navMain}}
     <!-- 다이나믹으로 구현하기 -->
     {{>Template.dynamic template=currentMode}}
 
 </body>
 
 <template name="chatMain">
-
-    <div class="container">
-        <!-- loginButtons  -->
-        <p>{{>loginButtons}}</p>
-        <!-- createRoom -->
-        <p>{{>createRoom}}</p>
-        <!-- roomList -->
-        <p>{{>roomList}}</p>
-    </div>
+  <div class="container">
+      <!-- createRoom -->
+      <p>{{>createRoom}}</p>
+      <!-- roomList -->
+      <p>{{>roomList}}</p>
+  </div>
 
 </template>
 
@@ -29,5 +28,3 @@
         {{>messageInput}}
     </div>
 </template>
-
-
