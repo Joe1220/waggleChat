@@ -2,7 +2,7 @@
 //계정 로그인시, register시 각 부분의 특성을 수정 가능.
 var myLogoutFunc = function() {
   // console.log('hello');
-  alert('Meteor 였습니다! 감사합니다!');
+  alert(' 대마법사 였습니다! 감사합니다! ');
   Session.set("viewMode", "login")
 };
 
