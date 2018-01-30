@@ -12,7 +12,11 @@ Meteor.publish("messages",function(roomId,count){
     }
 });
 
-// 특정 채팅방 publish
-Meteor.publish("room",function(roomId){
-    return Rooms.find({_id:roomId});
+Meteor.publish("userData", function () {
+    return Meteor.users.find();
 });
+//
+// // 특정 채팅방 publish
+// Meteor.publish("room",function(roomId){
+//     return Rooms.find({_id:roomId});
+// });

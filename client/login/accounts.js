@@ -3,7 +3,7 @@
 var myLogoutFunc = function() {
   // console.log('hello');
   alert(' 대마법사 였습니다! 감사합니다! ');
-  Session.set("viewMode", "login")
+  Session.set("viewMode", "login");
 };
 
 AccountsTemplates.configure({
