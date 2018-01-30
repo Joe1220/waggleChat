@@ -1,4 +1,3 @@
-
 Template.registerHelper("currentMode", ()=>{
     if(!Session.get("viewMode")) Session.set("viewMode","login");
     return Session.get("viewMode");

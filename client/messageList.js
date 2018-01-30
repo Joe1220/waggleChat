@@ -60,4 +60,3 @@ Template.messageList.onRendered(function () {
         }
     });
 });
-

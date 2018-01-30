@@ -10,7 +10,6 @@ Template.messageInput.events({
     }
 });
 
-
 Template.messageInput.onCreated(function(){
 
     var instance = this;
@@ -25,8 +24,8 @@ Template.messageInput.onCreated(function(){
             msg : message,
             roomId : Session.get("currentRoom"),
             owner : Meteor.userId(),
-            username : Meteor.user().username,
-            email : Meteor.user().emails[0].address
+            username : Meteor.user().username !== 'undefined' ? Meteor.user().username : Meteor.user().profile.name,
+            email : Meteor.user().emails ? Meteor.user().emails : Meteor.user().emails[0].address
         };
 
         /* Messages.insert(messageObj); 기존 코드 삭제 */

@@ -12,7 +12,7 @@ Template.roomList.onDestroyed(function(){
 
 Template.roomList.helpers({
     list(){
-        return Rooms.find();
+        return Rooms.find().fetch();
     }
 });
 

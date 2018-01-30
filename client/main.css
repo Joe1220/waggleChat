@@ -21,6 +21,10 @@ body
     overflow-y : scroll;
     overflow-x : hidden;
     padding : 0 10px 0 10px;
+    background-image: url('/backImage.png');
+    background-color: hsla(0,0%,100%,0.70);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
 }
 
 .panel-footer
