@@ -11,9 +11,7 @@ Template.messageInput.events({
 });
 
 Template.messageInput.onCreated(function(){
-
     var instance = this;
-
     instance.sendMessage = ()=>{
         var txtBox = instance.find("input[name=messageText]");
         var message = txtBox.value;
@@ -25,7 +23,7 @@ Template.messageInput.onCreated(function(){
             roomId : Session.get("currentRoom"),
             owner : Meteor.userId(),
             username : Meteor.user().username !== 'undefined' ? Meteor.user().username : Meteor.user().profile.name,
-            email : Meteor.user().emails ? Meteor.user().emails : Meteor.user().emails[0].address
+            emails : typeof Meteor.user().emails === 'object' ?  Meteor.user().emails[0].address : Meteor.user().emails
         };
 
         /* Messages.insert(messageObj); 기존 코드 삭제 */
