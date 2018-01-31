@@ -9,7 +9,6 @@ var myLogoutFunc = function() {
 AccountsTemplates.configure({
   confirmPassword: true,
   enablePasswordChange: true,
-  termsUrl: 'terms-of-use',
   privacyUrl: 'privacyUrl',
   onLogoutHook: myLogoutFunc
 });

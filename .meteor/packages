@@ -26,7 +26,6 @@ momentjs:moment@=2.13.1
 rzymek:moment-locale-ko@=2.12.0
 useraccounts:bootstrap
 raix:handlebar-helpers
-useraccounts:unstyled
 accounts-ui-unstyled
 accounts-ui
 aldeed:template-extension
