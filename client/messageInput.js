@@ -10,11 +10,8 @@ Template.messageInput.events({
     }
 });
 
-
 Template.messageInput.onCreated(function(){
-
     var instance = this;
-
     instance.sendMessage = ()=>{
         var txtBox = instance.find("input[name=messageText]");
         var message = txtBox.value;
@@ -25,14 +22,12 @@ Template.messageInput.onCreated(function(){
             msg : message,
             roomId : Session.get("currentRoom"),
             owner : Meteor.userId(),
-            username : Meteor.user().username,
-            email : Meteor.user().emails[0].address
+            username : Meteor.user().username !== 'undefined' ? Meteor.user().username : Meteor.user().profile.name,
+            emails : typeof Meteor.user().emails === 'object' ?  Meteor.user().emails[0].address : Meteor.user().emails
         };
 
         /* Messages.insert(messageObj); 기존 코드 삭제 */
         Meteor.call("insertMessage",messageObj); /* 메소드 호출로 변경 */
-
-        console.log(messageObj);
 
         txtBox.value = "";
         txtBox.focus();

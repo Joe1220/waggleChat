@@ -5,14 +5,14 @@ Meteor.startup(()=>{
 
         /*사용자 등록*/
         var usr1 = Accounts.createUser({
-            username : "와글이"
-            ,email : "waggle@gmail.com"
-            ,password : "12345678"
+            username : "와글이",
+            email : "waggle@gmail.com",
+            password : "12345678"
         });
         var usr2 = Accounts.createUser({
-            username : "수다쟁이"
-            ,email : "ppillip@gmail.com"
-            ,password : "dnflemf"
+            username : "수다쟁이",
+            email : "ppillip@gmail.com",
+            password : "dnflemf"
         });
 
         /*채팅방 등록*/

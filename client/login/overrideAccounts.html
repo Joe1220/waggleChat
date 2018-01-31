@@ -1,0 +1,23 @@
+<!-- 로그인 버튼을 커스터마이즈 . https://github.com/meteor-useraccounts/unstyled/tree/master/lib 참고-->
+<template name="override-atPwdFormBtn">
+  <button type="submit" class="at-btn submit {{submitDisabled}} btn-primary" id="at-btn">
+    {{buttonText}}
+  </button>
+</template>
+
+<template name="override-atTitle">
+  <div class="at-title">
+    <h2> {{title}} </h2>
+  </div>
+</template>
+
+<!-- 로그인 시, 유저 이름 클릭 후 비밀번호 변경을 위한 기존 loginButtons 수정 -->
+<template name="override_loginButtonsLoggedIn">
+  {{#if dropdown}}
+    {{> _loginButtonsLoggedInDropdown}}
+  {{else}}
+    <div class="login-buttons-with-only-one-button">
+      {{> _loginButtonsLoggedInSingleLogoutButton}}
+    </div>
+  {{/if}}
+</template>

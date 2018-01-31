@@ -21,6 +21,10 @@ body
     overflow-y : scroll;
     overflow-x : hidden;
     padding : 0 10px 0 10px;
+    background-image: url('/backImage.png');
+    background-color: hsla(0,0%,100%,0.70);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
 }
 
 .panel-footer
@@ -50,6 +54,37 @@ body
 {
     margin-right: 5px;
     margin-left: 5px;
+}
+
+.at-title, .at-btn{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.login-container {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.welcome_user {
+  /* color: white;
+  width: 140px;
+  margin-right: auto; */
+}
+
+.logout {
+  margin-right: 0px;
+}
+
+.at-form {
+  margin: 0px;
+}
+
+#login-title {
+  width: 400px;
+  margin-left: auto;
 }
 
 ::-webkit-scrollbar-track

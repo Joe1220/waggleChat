@@ -2,6 +2,7 @@
 Template.roomList.onCreated(function(){
     var self = this;
     self.roomListSub = self.subscribe("roomList");
+
 });
 
 
@@ -12,7 +13,7 @@ Template.roomList.onDestroyed(function(){
 
 Template.roomList.helpers({
     list(){
-        return Rooms.find();
+        return Rooms.find().fetch();
     }
 });
 
