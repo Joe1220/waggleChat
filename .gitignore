@@ -1,1 +1,9 @@
 node_modules/
+<<<<<<< HEAD
+=======
+bower_components/
+*.log
+
+build/
+dist/
+>>>>>>> master-holder
