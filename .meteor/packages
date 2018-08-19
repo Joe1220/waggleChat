@@ -30,7 +30,6 @@ accounts-ui-unstyled
 accounts-ui
 aldeed:template-extension
 alanning:roles
-accounts-facebook
 service-configuration
 google-config-ui
 accounts-google
